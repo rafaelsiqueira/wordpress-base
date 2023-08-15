@@ -11,22 +11,22 @@ services:
   envVars:
   - key: WORDPRESS_DB_HOST
     fromService:
-      name: mysql-wordpress
+      name: adanna-talent-mysql
       type: pserv
       property: host
   - key: WORDPRESS_DB_NAME
     fromService:
-      name: mysql-wordpress
+      name: adanna-talent-mysql
       type: pserv
       envVarKey: MYSQL_DATABASE
   - key: WORDPRESS_DB_USER
     fromService:
-      name: mysql-wordpress
+      name: adanna-talent-mysql
       type: pserv
       envVarKey: MYSQL_USER
   - key: WORDPRESS_DB_PASSWORD
     fromService:
-      name: mysql-wordpress
+      name: adanna-talent-mysql
       type: pserv
       envVarKey: MYSQL_PASSWORD
 - type: pserv
