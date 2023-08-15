@@ -3,7 +3,7 @@ services:
   name: adanna-talent-wordpress
   env: docker
   plan: starter
-  autoDeploy: false
+  autoDeploy: true
   disk:
     name: wordpress
     mountPath: /var/www/html
@@ -34,7 +34,7 @@ services:
   repo: https://github.com/rafaelsiqueira/render-mysql.git
   env: docker
   plan: starter
-  autoDeploy: false
+  autoDeploy: true
   disk:
     name: adanna-talent-mysql-disk
     mountPath: /var/lib/mysql
