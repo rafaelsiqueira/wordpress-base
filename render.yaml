@@ -1,8 +1,8 @@
 services:
 - type: web
-  name: wordpress
+  name: adanna-talent-wordpress
   env: docker
-  plan: standard
+  plan: starter
   autoDeploy: false
   disk:
     name: wordpress
@@ -33,10 +33,10 @@ services:
   name: mysql-wordpress
   repo: https://github.com/render-examples/mysql.git
   env: docker
-  plan: standard
+  plan: starter
   autoDeploy: false
   disk:
-    name: mysql-wordpress
+    name: adanna-talent-mysql
     mountPath: /var/lib/mysql
     sizeGB: 20
   envVars:
