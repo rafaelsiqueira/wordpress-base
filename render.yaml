@@ -30,13 +30,13 @@ services:
       type: pserv
       envVarKey: MYSQL_PASSWORD
 - type: pserv
-  name: mysql-wordpress
-  repo: https://github.com/render-examples/mysql.git
+  name: adanna-talent-mysql
+  repo: https://github.comrafaelsiqueira/render-mysql.git
   env: docker
   plan: starter
   autoDeploy: false
   disk:
-    name: adanna-talent-mysql
+    name: adanna-talent-mysql-disk
     mountPath: /var/lib/mysql
     sizeGB: 20
   envVars:
