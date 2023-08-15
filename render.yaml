@@ -31,7 +31,7 @@ services:
       envVarKey: MYSQL_PASSWORD
 - type: pserv
   name: adanna-talent-mysql
-  repo: https://github.comrafaelsiqueira/render-mysql.git
+  repo: https://github.com/rafaelsiqueira/render-mysql.git
   env: docker
   plan: starter
   autoDeploy: false
