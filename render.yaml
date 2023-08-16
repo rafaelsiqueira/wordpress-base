@@ -2,7 +2,7 @@ services:
 - type: web
   name: adanna-talent-wordpress
   env: docker
-  plan: starter
+  plan: standard
   autoDeploy: true
   disk:
     name: wordpress
@@ -33,7 +33,7 @@ services:
   name: adanna-talent-mysql
   repo: https://github.com/rafaelsiqueira/render-mysql.git
   env: docker
-  plan: starter
+  plan: standard
   autoDeploy: true
   disk:
     name: adanna-talent-mysql-disk
